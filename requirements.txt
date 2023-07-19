@@ -9,3 +9,5 @@
 # mmcls==1.0.0
 # supervisely==6.72.68
 # imgaug==0.4.0
+
+git+https://github.com/supervisely/supervisely.git@fix-container-scroll-styles
