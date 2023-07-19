@@ -28,7 +28,7 @@ card = Card(
         "Select classes that will be used for training. "
         "Supported shapes are Bitmap, Polygon, Rectangle."
     ),
-    content=Container([classes, filter_images_without_gt_field], "horizontal", overflow="scroll"),
+    content=Container([classes, filter_images_without_gt_field]),
 )
 
 card.lock()
