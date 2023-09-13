@@ -14,6 +14,7 @@ from supervisely.app.widgets import (
     FolderThumbnail,
     DoneLabel,
 )
+from supervisely.io.exception_handlers import handle_exceptions
 
 import src.sly_globals as g
 from src.train_parameters import TrainParameters
@@ -103,6 +104,7 @@ def add_metadata(cfg: Config):
     cfg.sly_metadata = ConfigDict(metadata)
 
 
+@handle_exceptions
 def train():
     # download dataset
     project_dir = sly_utils.download_project(iter_progress)
